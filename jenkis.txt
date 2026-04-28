@@ -1,0 +1,16 @@
+1)run all and every thing in your local machine the update !
+
+
+
+
+EXPORT PATH$ :PATH
+1)export the path
+>export PATH=$PATH:/usr/bin/
+2)docker build
+> docker build -t siddhant295/j1 .
+3)Docker login'
+echo " "|docker login -u siddhant295 --password-stdin
+4)update the image
+docker image push siddhant295/j1
+5)update the service 
+docker service update --force --image siddhant295/j1 
